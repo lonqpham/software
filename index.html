@@ -37,10 +37,18 @@
             Kho phần mềm miễn phí</a>
         </li>
         <li>
-          <a>
-            Liên hệ bên dưới để được hỗ trợ</a>
+          <a onclick="showRequestForm()">Yêu cầu phần mềm</a>
         </li>
       </ul>
+      <div id="request-popup" class="request-popup">
+        <span class="close" onclick="hideRequestForm()">&times;</span>
+        <h3>Yêu cầu phần mềm</h3>
+        <form action="#" method="post">
+          <input type="text" id="form-name" name="name" placeholder="Tên của bạn" required />
+          <input type="tel" id="form-name" name="name" placeholder="Phần mềm yêu cầu" required />
+          <input type="submit" value="Gửi yêu cầu" />
+        </form>
+      </div>
 
       <!-- SOCIAL LINKS -->
       <div id="social-links">
